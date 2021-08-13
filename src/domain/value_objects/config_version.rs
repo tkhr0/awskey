@@ -1,6 +1,7 @@
+use serde::{Deserialize, Serialize};
 use std::fmt;
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize, Serialize, PartialEq)]
 pub struct ConfigVersion {
     major: u8,
     minor: u8,
